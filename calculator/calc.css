@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* background: linear-gradient(0, #0a0a0a, #3a4452); */
+}
+
+.calculator {
+    border: 5px solid #71747b;
+    padding: 20px;
+    border-radius: 16px;
+    background-color: transparent;
+    box-shadow: 0px 3px 15px rgba(113, 115, 119, 0.5);
+    width: 25%; /* Default width for medium-sized screens */
+    min-width: 250px; /* Default width for medium-sized screens */
+}
+
+.calculator input {
+    width: 100%;
+    border: 2px solid whitesmoke;
+    height: 60px;
+    padding: 24px;
+    background: transparent;
+    box-shadow: 0px 3px 15px rgba(84, 84, 84, 0.1);
+    margin: 10px 0;
+    font-size: 36px;
+    text-align: right;
+    cursor: pointer;
+    color: black;
+}
+
+.calculator .btn {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.calculator .btn button {
+    border: none;
+    background: #2b2b2b;
+    color: white;
+    width: 100%;
+    height: 50px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: -8px 8px 15px rgba(25.25,25,0.1);
+    transition: background 0.3s ease;
+    margin: 10px;
+}
+
+.calculator .btn button:hover {
+    background: #575757;
+}
+
+.calculator .btn .equal{
+    background-color: orange;
+}
+.calculator .btn .symbol{
+    color: rgb(0, 255, 76);
+}
+
+/* Responsive for smaller screens */
+@media screen and (max-width: 1024px) {
+    .calculator {
+        width: 40%;
+    }
+
+    .calculator input {
+        font-size: 32px;
+    }
+
+    .calculator .btn button {
+        font-size: 16px;
+        height: 45px;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .calculator {
+        width: 50%;
+    }
+
+    .calculator input {
+        font-size: 28px;
+    }
+
+    .calculator .btn button {
+        font-size: 14px;
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .calculator {
+        width: 70%;
+    }
+
+    .calculator input {
+        font-size: 24px;
+    }
+
+    .calculator .btn button {
+        font-size: 14px;
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .calculator {
+        width: 90%;
+    }
+
+    .calculator input {
+        font-size: 22px;
+    }
+
+    .calculator .btn button {
+        font-size: 12px;
+        height: 35px;
+    }
+}
+
